@@ -1,0 +1,1473 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    background-color: rgba(250, 250, 250, 0.877);
+    background-size: cover;
+    color: #666;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.tood-page-wrapper{
+    min-height: 100%;
+}
+
+/* section 3 */
+
+.section3 {
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 1, 1);
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    overflow-x: hidden;
+}
+
+.nccflogo {
+    width: 100%;
+    margin: 20px 50px;
+    z-index: 50;
+}
+
+.nccflogo img {
+    width: 10%;
+    z-index: 20;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    margin-left: 40px;
+}
+
+
+
+/* slider section */
+
+.details {
+    width: 50%;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+.navbottom {
+    
+    width: 100%;
+    background: rgba(0, 0, 255, 0.473);
+    overflow: hidden;
+    border-radius: 30px;
+    background-size: cover;
+
+}
+
+/* nav bottom */
+
+.nivoslider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+/* login section */
+
+.logindetails {
+    position: relative;
+    width: 50%;
+    margin: 0px 0px;
+    padding-left: 100px;
+    z-index: 15;
+    display: none;
+}
+
+
+
+.loginbox {
+    width: 400px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    opacity: 1;
+    visibility: visible;
+    animation: zoomin 2s ease-in;
+}
+
+.displaybox {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+@keyframes zoomin {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* styling login */
+
+.containerlog {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.836);
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .9);
+}
+
+.loginpanel {
+    margin: 20px 30px;
+
+    padding-bottom: 10px;
+}
+
+.loginhead {
+    font-size: 1.5rem;
+    color: rgb(4, 14, 102);
+    padding-top: 0px;
+    text-align: center;
+}
+
+.logdashimg {
+    padding: 10px;
+    text-align: center;
+}
+
+.logdashimg img {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+
+.loginhead h3 {
+
+    margin-top: -20px;
+    margin-bottom: 40px;
+
+}
+
+.loginbody {
+    padding: 4px;
+    padding-top: 35px;
+    color: black;
+
+}
+
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    border: none;
+    border-bottom: 1px solid rgb(112, 107, 109);
+    outline: none;
+    background: transparent;
+    color: rgb(15, 14, 10);
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(114, 109, 109);
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -24px;
+    left: 0;
+    color: rgb(59, 114, 231);
+    font-size: 14px;
+}
+
+.submitdiv {
+    text-align: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
+.submitdiv input[type="submit"] {
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(59, 114, 231);
+    padding: 12px 0px;
+    cursor: pointer;
+    margin: 1px auto;
+}
+
+input[type="submit"]:hover {
+
+    background-color: #7c7e00;
+    color: white;
+}
+
+.logbodyfoot {
+    padding: 0px 5px;
+    color: rgb(59, 114, 231);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.forgotusername {
+    color: rgb(59, 114, 231);
+
+}
+
+.forgotusername:hover {
+    color: purple;
+
+}
+
+.loginfooter {
+    margin: 10px 0px;
+    margin-top: 5;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.loginfooter p {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid rgb(59, 114, 231);
+    outline: none;
+    color: rgb(59, 114, 231);
+    background: transparent;
+    width: 90%;
+    cursor: pointer;
+    margin: 1px auto;
+    padding: 5px 0px;
+}
+
+.loginfooter p a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: rgb(59, 114, 231);
+    background: transparent;
+
+    cursor: pointer;
+
+}
+
+.loginfooter p:hover {
+
+    border: 1px solid purple;
+
+}
+
+
+.loginfooter p a:hover {
+
+    color: purple;
+
+}
+
+.signup-btn {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: rgb(59, 114, 231);
+    background: transparent;
+
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.signup-btn:hover {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    outline: none;
+    color: purple;
+    text-decoration: none;
+}
+
+
+
+/* styling login end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* signup section */
+.bgmodal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all 2s;
+
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1100;
+}
+
+
+.signupnow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 1.7s;
+    z-index: 1200;
+}
+
+.display {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.x-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    color: #222;
+}
+
+.x-btn:hover {
+
+    color: rgb(180, 180, 175);
+}
+
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(0.5);
+
+    }
+
+    50% {
+        transform: scale(0.7);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
+/* styling signup */
+
+
+
+
+.signupnow .container {
+    width: 100%;
+    height: 550px;
+    background-color: rgba(245, 245, 245, 0.836);
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .9);
+}
+
+.signuppanel {
+    margin: 0px 10px;
+    padding-bottom: 10px;
+}
+
+.signuphead {
+    display: flex;
+    font-size: 1.5rem;
+    color: rgb(4, 14, 102);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.signdashimg {
+    padding: 0px;
+    text-align: left;
+}
+
+.signuphead img {
+    width: 20%;
+    height: 20%;
+}
+
+.signuphead h3 {
+    padding: 6px 10px;
+    display: block;
+}
+
+.signuphead h3 p {
+    padding: 4px 0px;
+    font-size: 1.2rem;
+}
+
+hr {
+
+    width: 450px;
+    margin-top: 5px;
+    margin-left: -11px;
+
+}
+
+
+
+.loginbody {
+    padding: 4px;
+    color: black;
+    position: relative;
+
+}
+
+
+
+.input-sign-box input {
+    width: 200px;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: rgb(15, 14, 10);
+}
+
+
+.name1 {
+
+    position: absolute;
+    top: 10px;
+    left: 4px;
+
+}
+
+
+.name2 {
+    position: absolute;
+    top: 10px;
+    right: 4px;
+
+}
+
+
+
+
+.input-sign-box-email input {
+    width: 420px;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: rgb(15, 14, 10);
+}
+
+
+.email {
+    position: absolute;
+    top: 55px;
+    left: 4px;
+
+}
+
+
+.number {
+    position: absolute;
+    top: 100px;
+    left: 4px;
+
+}
+
+
+
+.password1 {
+
+    position: absolute;
+    top: 145px;
+    left: 4px;
+
+}
+
+
+.password2 {
+    position: absolute;
+    top: 145px;
+    right: 4px;
+
+}
+
+
+
+
+.input-sign-box-equal input {
+    width: 135px;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 8px 10px;
+
+    border-radius: 5px;
+    color: rgb(15, 14, 10);
+}
+
+
+
+.labeldob {
+    position: relative;
+    top: 185px;
+    left: 4px;
+
+}
+
+
+.dob1 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+
+}
+
+.dob2 {
+    position: absolute;
+    top: 20px;
+    left: 141px;
+
+}
+
+.dob3 {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+
+}
+
+
+.input-sign-box-equal-gender input {
+    width: 105px;
+    font-size: 16px;
+    color: green;
+    letter-spacing: 1.5px;
+    outline: none;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 8px 0px;
+    border-radius: 5px;
+    color: rgb(15, 14, 10);
+}
+
+.input-sign-box-equal-gender button {
+    position: relative;
+    width: 135px;
+    height: 36px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 7px 0px;
+}
+
+.input-sign-box-equal-gender button span {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.input-sign-box-equal-gender .radio {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 20px;
+    height: 15px;
+    padding-left: 5px;
+}
+
+.labelgender {
+    position: relative;
+    top: 230px;
+    left: 4px;
+
+}
+
+.gender1 {
+    width: 150px;
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 0px;
+
+}
+
+.gender2 {
+    position: absolute;
+    top: 20px;
+    left: 141px;
+
+}
+
+.gender3 {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+
+}
+
+
+
+.labelzones {
+    position: relative;
+    top: 275px;
+    left: 4px;
+
+}
+
+.option {
+    width: 135px;
+    height: 36px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 204, 174);
+    background: rgb(239, 240, 229);
+    padding: 7px 2px;
+    text-align: center;
+}
+
+.option option {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.zone1 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+
+}
+
+.zone2 {
+    position: absolute;
+    top: 20px;
+    left: 141px;
+
+}
+
+.zone3 {
+    position: absolute;
+    top: 20px;
+    right: 4px;
+
+}
+
+
+
+.loginbody label {
+
+    padding: 4px 0;
+    font-size: 16px;
+    color: rgb(114, 109, 109);
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.privacy {
+    position: absolute;
+    top: 376px;
+    left: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.submitdivsign {
+    position: absolute;
+    top: 410px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.submitdivsign input[type="submit"] {
+
+    width: 70%;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(59, 114, 231);
+    padding: 12px 0px;
+    cursor: pointer;
+    margin: 1px auto;
+}
+
+input[type="submit"]:hover {
+
+    background-color: #7c7e00;
+    color: white;
+}
+
+.logbodyfoot {
+    padding: 0px 5px;
+    color: rgb(59, 114, 231);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.forgotusername {
+    color: rgb(59, 114, 231);
+
+}
+
+.forgotusername:hover {
+    color: purple;
+
+}
+
+.loginfooter {
+    margin: 10px 0px;
+    margin-top: 5;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.loginfooter p {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid rgb(59, 114, 231);
+    outline: none;
+    color: rgb(59, 114, 231);
+    background: transparent;
+    width: 90%;
+    cursor: pointer;
+    margin: 1px auto;
+    padding: 5px 0px;
+}
+
+.loginfooter p a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: rgb(59, 114, 231);
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.loginfooter p:hover {
+
+    border: 1px solid purple;
+
+}
+
+
+.loginfooter p a:hover {
+
+    color: purple;
+
+}
+
+
+/* styling signup end */
+
+
+
+
+
+
+
+
+
+
+
+/* styling footer */
+
+
+footer {
+
+    position: static;
+    width: 100%;
+    bottom: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: sans-serif;
+    background-color: rgba(136, 179, 179, 0.884);
+    color: rgb(85, 77, 2);
+}
+
+.foot {
+
+    display: flex;
+    width: 100%;
+    padding: 10px 10px;
+
+}
+
+.footleft {
+    width: 70%;
+}
+
+
+.footright {
+    width: 30%;
+}
+
+
+#footer-text1 {
+    align-content: left;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: rgb(5, 70, 90);
+
+}
+
+#footer-text2 {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+
+
+}
+
+
+#footer-text2 i {
+    font-size: 1.2rem;
+    padding: 5px 1px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile menu */
+@media all and (max-width: 1090px) {
+
+
+
+    .information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+    }
+
+    .details {
+        width: 100%;
+    }
+
+
+    .containerlog {
+        width: 100%;
+        background-color: rgba(245, 245, 245, 0.836);
+        border-radius: 6px;
+        border: 1px solid #cccccc;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .9);
+
+    }
+
+
+    .logindetails {
+        position: relative;
+        width: 100%;
+        margin: 0px auto;
+        padding-left: 0px;
+    }
+
+
+
+    .loginbox {
+        max-width: fit-content;
+        margin: 0px auto;
+        opacity: 1;
+        visibility: visible;
+        animation: zoomin 2s ease-in;
+    }
+
+    .signupnow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        max-width: fit-content;
+        width: fit-content;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear 1.7s;
+    
+    }
+    
+
+    .display {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(image/Preloader_2.gif) center no-repeat #fff;
+}
+
+
+/* Setting the background image*/
+
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     /*background: url('image/college_1.jpg');*/
+      background-repeat: no-repeat;
+      background-position:center;
+      background-attachment: fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      z-index: -1;
+     }
+    
+     .background-image-blur{
+         -webkit-filter: blur(45px);
+        -moz-filter: blur(45px);
+        -o-filter: blur(45px);
+        -ms-filter: blur(45px);
+        filter: blur(45px);
+    
+        -webkit-transition: all 2s ease-out;
+        -moz-transition: all 2s ease-out;
+        -o-transition: all 2s ease-out;
+        -ms-transition: all 2s ease-out;
+    
+        transition: all 2s ease-out;
+     }
+    
+    
+    /*To give the gradient to the background image in "#background"*/
+    
+    /*.FadeAway{
+        position: absolute; top:0px; left:0px; width:100%; height:100%;
+            background:transparent;
+            background: linear-gradient(top, rgba( 255, 255, 255, 255 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+            background: -moz-linear-gradient(top, rgba( 255, 255, 255, 0) 0%, rgba( 255, 255, 255, 1 ) 100% );
+            background: -ms-linear-gradient(top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+            background: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+            background: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
+            -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff);
+    }*/
+    
+    #header{
+        width:100%;
+        /*height:100px;*/
+    }
+    
+    .desktop-header{
+        height: 100px;
+    }
+    
+    .mobile-header{
+        height: 0px;
+    }
+    
+    
+    
+    #main-tood{
+        opacity: 0;
+        z-index: 200;
+    }
+    
+
+
+
+
+    .sectioncontinuee {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100000;
+        background: rgba(16, 82, 126, 0.349);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    
+    }
+    
+    .continuee {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        padding: 20px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        transition: 1s;
+    }
+    
+    .continuee .mainprocess {
+        position: relative;
+        width: 60%;
+        background-color: rgb(189, 100, 16);
+        background-color: rgba(85, 56, 30, 0);
+        padding: 0px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .continuee .mainprocess .head {
+        width: 100%;
+       /**/ background-color: rgba(116, 70, 27, 0);
+        position: relative;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        color: white;
+    }
+    
+    
+    .continuee .mainprocess .head .noticeimg {
+        padding: 0;
+        width: 100px;
+    }
+    
+    .continuee .mainprocess .head .noticeimg img {
+        width: 80%;
+        height: 30%;
+    }
+    
+    .continuee .mainprocess .head h3 {
+        font-family: Cinzel, serif;
+        font-weight: 500;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        text-align: left;
+        color: white;
+    }
+    
+    
+    .continuee .mainprocess .bottom {
+        
+        padding: 20px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    
+    .continuee .mainprocess .bottom h1 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 10px 0;
+        margin-top: 20px;
+        text-align: left;
+    
+    }
+    
+    
+    .continuee .mainprocess .bottom h2 {
+        font-weight: 400;
+        text-align: left;
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    
+    .continuee .mainprocess .bottom h2:last-child {
+        font-weight: 600;
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px auto;
+    }
+    
+    
+    .continuee .mainprocess .bottom p {
+        text-align: left;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    
+    .continuee .mainprocess .bottom button {
+        display: inline-block;
+        width: 150px;
+        background-color: khaki;
+        color: rgb(6, 110, 105);
+    
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 30px 0;
+        padding: 15px 20px;
+        cursor: pointer;
+    
+    }
+    
+    .continuee .mainprocess .bottom button:hover {
+        background-color: khaki;
+        color: rgb(6, 110, 105);
+        
+        background-color: var(--purple);
+        color: whitesmoke;
+    
+    }
+    
+    .sectioncontinuee.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+     
+    
+    .sectioncontinuee .closi {
+        color: white;
+        border-radius: 50%;
+        padding: 10px 15px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 3rem;
+        cursor: pointer;
+    
+    }
+    
+     
+    .sectioncontinuee .closi:hover {
+        background-color: rgb(100, 91, 9);
+        color: white;
+    
+    }
+    
+    .sectioncontinuee .close-forever{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 2rem;
+        padding-left: 5px;
+    }
+    
+    .sectioncontinuee .close-mainprocess-input{
+        
+        margin-right: 7px;
+    }
+    
+    
+    .continueehide{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+
+    .continuesubmitBtn{
+        display: block;
+        width: 100%;
+        margin-left: 2px;
+        padding: 10px 15px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: var(--orange);
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .continuesubmitBtn:hover{
+        
+        background: var(--purple);
+        color: white;
+        
+    }
+
+
+    form { 
+        width: 80%; 
+        padding:0; 
+        margin:0;
+    }
+
+    form input:last-child{
+        
+        padding: 15px 15px;
+        font-size: 1.5rem;
+        font-variant: small-caps;
+        width: 100%;
+        background-color: rgb(25, 26, 25);
+        
+        background-color: rgb(8, 91, 129);
+        color: rgb(255, 255, 255);
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+
+    form input:last-child:hover{
+        
+        background: var(--purple);
+        color: rgb(255, 255, 255);
+    
+    }
+
+
+
+
+
+
+    @media (max-width:1050px) {
+
+
+
+    
+        .continuee {
+        
+            width: 80%;
+            height: 80%;
+            padding: 20px 10px;
+            
+        }
+        
+        .continuee .mainprocess {
+            width: 100%;
+            
+        }
+
+    }
+
+
+
+
+    
+
+@media (max-width:768px) {
+
+    
+    
+    .continuee {
+        
+        width: 90%;
+        height: 90%;
+        padding: 20px 10px;
+        
+    }
+    
+    .continuee .mainprocess {
+        width: 100%;
+        
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 8px;
+    }
+    
+
+    .continuee {
+        
+        width: 95%;
+        height: 95%;
+        padding: 20px 10px;
+        
+    }
+    
+
+
+    .sectioncontinuee .closi {
+        
+        right: 10px;
+
+    }
+
+}
