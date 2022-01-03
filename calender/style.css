@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.calender-info-wrapper{
+  display: none;
+}
+
+.calender-sermon-whole{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.calender-sermon-whole .calender-wrapper{
+  flex-basis: 40%;
+}
+
+.calender-wrapper .container {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  color: #eee;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.calender-wrapper .container .calendar {
+  
+  position: relative;
+  width: 45rem;
+  height: 52rem;
+  background-color: rgb(130, 133, 6);
+  background-color: rgb(40, 42, 68);
+  background: linear-gradient(83.76deg, rgb(40, 42, 68) 0%, rgba(40, 42, 68, 0.937) 57.82%, rgba(40, 42, 68, 0.773) 99.41%, rgba(40, 42, 68, 0.416) 111.27%, rgba(40, 42, 68, 0) 111.28%);
+
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.calender-wrapper .container .calendar .preacher-img{
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.preacher-img img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.calendar .month {
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  background-color: rgb(40, 42, 68);
+  background: linear-gradient(83.76deg, rgb(40, 42, 68) 0%, rgba(40, 42, 68, 0.937) 57.82%, rgba(40, 42, 68, 0.773) 99.41%, rgba(40, 42, 68, 0.416) 111.27%, rgba(40, 42, 68, 0) 111.28%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+  background-color: rgb(3, 75, 80);
+}
+
+.date p{
+  display: inline-block;
+  background-color: #37e2a0;
+  background-color: rgb(3, 75, 80);
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.date h3{
+  display: none;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.eho{
+  font-size: 32px;
+}
+
+
+.date_click.active{
+  background-color: #bfcc0a;
+  background-color: rgb(130, 133, 6);
+  border-radius: 50%;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+
+.single-sermon-wrapper{
+  flex-basis: 55%;
+  width: 100%;
+  height: 80vh;
+  background-color: #ffffff;
+  background-color: rgb(2, 152, 179);
+  background-color: rgb(151, 155, 156);
+  background: linear-gradient(83.76deg, rgb(40, 42, 68) 0%, rgba(40, 42, 68, 0.937) 57.82%, rgba(40, 42, 68, 0.773) 99.41%, rgba(40, 42, 68, 0.416) 111.27%, rgba(40, 42, 68, 0) 111.28%);
+
+  color: #ecebeb;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.single-sermon-wrapper h1,
+.single-sermon-wrapper h2,
+.single-sermon-wrapper h3,
+.single-sermon-wrapper h4,
+.single-sermon-wrapper p{
+  
+  font-size: 1.6rem;
+  padding: 4px 0;
+}
+
+.single-sermon-wrapper p{
+  line-height: 20px;
+  font-size: 1.4rem;
+}
+
+
+.top-sermon-wrap{
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  margin: 10px;
+  background: #ccc;
+  color: rgb(14 22 74);
+
+}
+
+.top-sermon-wrap .top-show-cal{
+  background: rgb(255, 255, 255);
+  padding: 10px 0px;
+  color: rgb(22, 22, 22);
+  border-radius: 2px;
+  margin-left: -10px;
+}
+
+.top-sermon-wrap .top-show-cal p{
+  padding: 0px 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+
+.top-show-cal-wrap{
+  margin: 0;
+  padding: 0;
+  
+  margin: 10px;
+
+}
+
+.top-show-cal{
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  color: rgb(22, 22, 22);
+  border-radius: 2px;
+}
+
+.top-show-cal p{
+  
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.top-show-cal i{
+  font-size: 2.1rem;
+  padding: 0 5px;
+  color: rgb(151, 69, 21);
+}
+
+.top-show-cal-wrap .top-sub-cal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(3, 75, 80);
+}
+
+.top-show-cal-wrap .top-sub-cal .image-cal{
+  width: 300px;
+  height: 200px;
+}
+
+.top-show-cal-wrap .top-sub-cal .image-cal img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-show-cal-wrap .top-sub-cal .sub-area{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.top-show-cal-wrap .top-sub-cal .sub-area h1{
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 6px 0;
+}
+
+.top-show-cal-wrap .top-sub-cal .sub-area p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 6px 0;
+}
+
+.top-show-cal-wrap .top-sub-cal .sub-area .input-cal{
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 6px 0;
+}
+
+
+.top-show-cal-wrap .top-sub-cal .sub-area .input-cal form input{
+  font-size: 1.6rem;
+  margin: 6px auto;
+  padding: 10px 15px;
+  width: 250px;
+  background-color: rgb(216, 216, 216);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+ 
+}
+
+
+.top-show-cal-wrap .top-sub-cal .sub-area .input-cal form input:nth-last-child(1){
+  
+  padding: 10px 15px;
+  display: inline-block;
+  width: fit-content;
+  background-color: rgb(25, 26, 25);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+
+.top-show-cal-wrap .top-sub-cal .sub-area .input-cal form input:nth-last-child(1):hover{
+  
+  background-color: rgb(130, 133, 6);
+  color: rgb(255, 255, 255);
+ 
+}
+
+
+.top-show-cal-wrap h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 10px 0;
+  margin-top: 5px;
+}
+
+.top-show-cal-wrap .prev-devotion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: rgb(44, 44, 44);
+  border-radius: 2px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards.active .prev-devotion-cards-top{
+  
+  background-color: rgb(3, 75, 80);
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards:hover .prev-devotion-cards-top{
+  
+  background-color: rgb(130, 133, 6);
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-top{
+  background: coral;
+  width: 100%;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-top h4{
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-bottom{
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  width: 100%;
+  
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-bottom p:nth-child(1){
+  font-size: 4rem;
+  color: coral;
+  padding: 5px 0;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-bottom p:nth-child(2){
+  font-size: 1.2rem;
+}
+
+.top-show-cal-wrap .prev-devotion .prev-devotion-cards-bottom p:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+
+
+
+
+#single_sermon_area{
+  background: transparent;
+}
+
+
+
+
+
+@media (max-width:891px) {
+
+
+  .calender-wrapper .container .calendar {
+  
+    position: relative;
+    width: 45rem;
+    height: 52rem;
+    background-color: rgb(130, 133, 6);
+    background-color: rgb(40, 42, 68);
+    background: linear-gradient(83.76deg, rgb(40, 42, 68) 0%, rgba(40, 42, 68, 0.937) 57.82%, rgba(40, 42, 68, 0.773) 99.41%, rgba(40, 42, 68, 0.416) 111.27%, rgba(40, 42, 68, 0) 111.28%);
+  
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+      
+  .calender-sermon-whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .calender-sermon-whole .calender-wrapper{
+    flex-basis: 100%;
+  }
+
+  .single-sermon-wrapper{
+    flex-basis: 100%;
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+    background-color: rgb(2, 152, 179);
+    background-color: rgb(151, 155, 156);
+    background: linear-gradient(83.76deg, rgb(40, 42, 68) 0%, rgba(40, 42, 68, 0.937) 57.82%, rgba(40, 42, 68, 0.773) 99.41%, rgba(40, 42, 68, 0.416) 111.27%, rgba(40, 42, 68, 0) 111.28%);
+
+    color: #ecebeb;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  
+
+    
+
+  .top-show-cal-wrap{
+    margin: 0;
+    padding: 0;
+    
+    margin: 1px;
+
+  }
+
+  .top-show-cal{
+    background: rgb(255, 255, 255);
+    padding: 10px 1px;
+    color: rgb(22, 22, 22);
+    border-radius: 2px;
+  }
+
+
+    
+  .top-show-cal-wrap .top-sub-cal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(3, 75, 80);
+  }
+    
+  .top-show-cal-wrap .top-sub-cal .sub-area{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+    
+  .top-show-cal-wrap .top-sub-cal .image-cal{
+    width: 100%;
+    height: 200px;
+  }
+
+
+}
+
+
+    
+@media (max-width:598px) {
+        
+
+}

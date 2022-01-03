@@ -1,0 +1,293 @@
+
+.mySwiper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow: unset;
+    width: 100%;
+    height: inherit;
+}
+.nccf-flex-div{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.nccf-container-all{
+    position: relative;
+    background-color: #b3b3b3;
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    height: 100%;
+}
+
+.nccf-left-side{
+    flex-basis: 70%;
+    padding: 10px;
+}
+
+
+.nccf-left-container{
+    background: #f9f9f9;
+    border-radius: 4px;
+    
+}
+
+.nccf-left-container .banner{
+   position: relative;
+   width: 100%;
+   height: 50vh;
+   border-radius: 10px;
+   padding: 10px 1px;
+   
+}
+
+.nccf-left-container .banner .splide{
+   position: absolute;
+   width: 100%;
+   height: 50vh;
+   border-radius: 10px;
+   padding: 10px 5px;
+   padding-right: 10px;
+}
+
+
+
+.splide__slide .move-img{
+   width: 100%;
+   height: 50vh;
+  
+}
+
+.splide__slide .move-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nccf-list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    padding: 20px 5px;
+}
+.vid-list .thumbnail{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.vid-list .thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.vid-list .nccf-flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+
+.vid-list .nccf-flex-div img{
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+}
+
+.vid-info a{
+    color: #000000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.nccf-right-side{
+    
+    flex-basis: 30%;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100%;
+}
+
+.nccf-right-container{
+    height: 100%;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.right-side-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.right-side-title h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.right-side-title a{
+    font-size: 12px;
+    color: #000;
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.left-event{
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.event p{
+    font-size: 12px;
+}
+
+.event a{
+    font-size: 12px;
+    color: #000;
+}
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(40, 42, 68);
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+
+}
+
+.event:hover .left-event span {
+    
+    background: rgb(130, 133, 6);
+}
+
+.right-event{
+    padding: 5px 0;
+
+}
+
+.right-event a{
+    color: rgb(63, 63, 63);
+
+}
+
+.side-birthday{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.side-birthday img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.side-ads{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.side-ads img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+
+
+
+
+@media (max-width:991px) {
+        
+    .nccf-container-all{
+        position: relative;
+        background-color: #b3b3b3;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+
+    .nccf-left-side{
+        flex-basis: 100%;
+        padding: 10px;
+    }
+
+
+    .nccf-right-side{
+        width: 100%;
+        flex-basis: 100%;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        align-self: center;
+    }
+
+        
+    .nccf-right-container{
+        
+        background: #f9f9f9;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+        
+    .nccf-container-all{
+    
+        padding: 2px 1px;
+    }
+
+
+    .nccf-left-side{
+        padding-top: 5px;
+    }
+
+}
+

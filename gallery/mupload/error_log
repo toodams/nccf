@@ -1,0 +1,17 @@
+[03-Dec-2021 14:26:46 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 38
+[03-Dec-2021 14:26:46 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 40
+[03-Dec-2021 14:27:09 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 38
+[03-Dec-2021 14:27:09 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 40
+[03-Dec-2021 14:27:40 UTC] PHP Notice:  Undefined offset: 4 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 38
+[03-Dec-2021 14:27:40 UTC] PHP Notice:  Undefined offset: 4 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 40
+[03-Dec-2021 14:29:56 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 38
+[03-Dec-2021 14:29:56 UTC] PHP Notice:  Undefined offset: 2 in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 40
+[03-Dec-2021 14:46:02 UTC] PHP Notice:  Undefined variable: index in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 35
+[03-Dec-2021 14:46:02 UTC] PHP Notice:  Undefined index:  in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 35
+[03-Dec-2021 14:46:02 UTC] PHP Notice:  Undefined variable: index in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 37
+[03-Dec-2021 14:46:02 UTC] PHP Notice:  Undefined index:  in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 37
+[03-Dec-2021 14:46:20 UTC] PHP Notice:  Undefined variable: index in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 35
+[03-Dec-2021 14:46:20 UTC] PHP Notice:  Undefined index:  in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 35
+[03-Dec-2021 14:46:20 UTC] PHP Notice:  Undefined variable: index in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 37
+[03-Dec-2021 14:46:20 UTC] PHP Notice:  Undefined index:  in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 37
+[03-Dec-2021 14:57:58 UTC] PHP Fatal error:  Maximum execution time of 90 seconds exceeded in /home2/tootechc/public_html/nccf/gallery/mupload/ajaxUpload.php on line 43

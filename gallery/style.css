@@ -1,0 +1,358 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    background-color: rgba(250, 250, 250, 0.877);
+    background-size: cover;
+    color: #666;
+    overflow-x: hidden;
+}
+
+i {
+    color: white;
+}
+
+
+
+
+
+
+
+.aboutsection4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin: 80px 0px;
+    margin-bottom: 15px;
+
+}
+
+.backgroundnccf {
+    background: url(../image/nccf_opic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.aboutsection4 .nccfontopbackground {
+    position: absolute;
+    width: 96%;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.868);
+    padding: 10px 50px;
+    padding-left: 20px;
+    border-radius: 5;
+
+
+}
+
+
+.aboutsection4 .nccfontopbackgroundcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.aboutsection4 input {
+    padding: 10px 15px;
+    width: 70%;
+    font-size: 1.5em;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+
+}
+
+.aboutsection4 button {
+    padding: 10px 10px;
+    font-size: 1.1em;
+
+}
+
+
+
+.aboutsection4 .nccfontopbackground h1 {
+    color: rgb(20, 162, 197);
+    font-size: 2em;
+    padding: 7px 0px;
+    padding-top: 0px;
+}
+
+
+.aboutsection4 .nccfontopbackground p {
+    color: rgb(197, 180, 28);
+    font-size: 1em;
+}
+
+
+
+
+.aboutsection4 .nccfrightimage {
+    position: absolute;
+    width: 20%;
+    top: -5px;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+
+.aboutsection4 .nccfrightimage img {
+
+    width: 40%;
+
+
+}
+
+#submitsearch{
+    border-radius: 12px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-left: unset;
+    margin-left: -12px;
+    padding: 10px 15px;
+    width: 80px;
+    font-size: 1.5em;
+    background-color: rgb(10, 128, 128);
+    color: #fff;
+    cursor: pointer;
+}
+
+#submitsearch:hover{
+    background-color: rgb(48, 4, 73);
+    
+}
+
+
+
+
+
+
+
+
+
+.gallery {
+    background-color: rgb(243, 237, 237);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.gallery img {
+
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 128, 8);
+    cursor: pointer;
+    transition: .8s;
+    padding: 5px;
+    overflow-x: hidden;
+
+
+}
+
+.fancybox-title {
+    padding: 0 0 10px 0;
+}
+
+
+.fancybox-title-over-wrap {
+    width: 100%;
+    padding: 0;
+}
+
+.fancybox-title-over-wrap>div {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* Mobile menu */
+@media all and (max-width: 700px) {
+
+
+
+
+    .aboutsection4 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        margin: 80px 0px;
+        margin-bottom: 7px;
+
+    }
+
+
+
+
+
+    .aboutsection4 .nccfontopbackground {
+        position: absolute;
+        width: 98%;
+        top: 10px;
+        bottom: 10px;
+        left: 4px;
+        right: 4px;
+        padding: 10px 50px;
+        padding-left: 10px;
+
+
+    }
+
+    .aboutsection4 .nccfontopbackgroundcenter {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .aboutsection4 input {
+        padding: 5px 10px;
+        width: 70%;
+        font-size: 1.3em;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+
+    }
+
+    .aboutsection4 button {
+        padding: 5px 6px;
+        font-size: 1em;
+
+    }
+
+
+
+    .aboutsection4 .nccfontopbackground h1 {
+        color: rgb(20, 162, 197);
+        font-size: 1.6em;
+        padding: 7px 0px;
+        padding-top: 0px;
+    }
+
+
+    .aboutsection4 .nccfontopbackground p {
+        color: rgb(197, 180, 28);
+        font-size: 0.8em;
+    }
+
+
+
+
+
+    .aboutsection4 .nccfrightimage {
+        position: absolute;
+        width: 20%;
+        top: -10px;
+        bottom: 0px;
+        right: 0px;
+
+    }
+
+
+    .aboutsection4 .nccfrightimage img {
+
+        width: 50%;
+
+
+    }
+
+
+    #submitsearch{
+        border-radius: 10px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        border-left: unset;
+        margin-left: -12px;
+        padding: 5px 10px;
+        width: 70px;
+        font-size: 1.3em;
+        background-color: rgb(10, 128, 128);
+        color: #fff;
+    }
+    
+
+
+    .gallery {
+        background-color: rgb(243, 237, 237);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+
+    .gallery img {
+
+        margin: 2px;
+        padding: 2px;
+        float: left;
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid rgb(141, 128, 8);
+        cursor: pointer;
+        transition: .8s;
+        overflow-x: hidden;
+
+    }
+
+
+}
