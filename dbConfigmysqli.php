@@ -1,4 +1,3 @@
-
 <?php
 
 	/* UnComment For online purpose 
@@ -21,9 +20,9 @@
 
 
 ?>
-   
 
-   <?php
+
+<?php
 
    /* Comment For online purpose 
 
@@ -31,8 +30,8 @@
 
 
     $server = "localhost";
-    $name ="root";
-    $password = "";
+    $name ="admin";
+    $password = "password";
     $dbname = "tootechc_nccfebonyi";
     
 
@@ -47,4 +46,3 @@
 
 
 ?>
-   

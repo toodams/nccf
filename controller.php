@@ -36,8 +36,8 @@ class controller
 	function __construct()
 	{
 		$this->host = 'localhost';
-		$this->username = 'root';
-		$this->password = '';
+		$this->username = 'admin';
+		$this->password = 'password';
 		$this->database = 'tootechc_nccfebonyi';
 		$this->home_page = 'http://localhost/nccf/';
 
